@@ -3,10 +3,12 @@
 <head>
 	<title> Structurer le contenu d'une page HTML </title>
 	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="PageCss.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"/>
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel="stylesheet"/>
 </head>
 <body>
-	<h1>Contenu projet “Structurer un contenu HTML”</h1>
-	<h3>Page 1: Histoire d'Internet</h3>
+	<h1>Histoire d'Internet</h1>
 	<p>L'<strong>histoire d'Internet</strong> remonte au développement des premiers réseaux de télécommunication.
         L’idée d’un réseau informatique, permettant aux utilisateurs de différents ordinateurs de
         communiquer, se développa par de nombreuses étapes successives. La somme de tous ces
@@ -30,9 +32,8 @@
 	<h3>Chronologie sélective</h3>
 	<table>
 		<tr>
-		 	<td>Année</td>
-			<td>Evénement</td>
-			
+		 	<th>Année</th>
+			<th>Evénement</th>
 		</tr>
 		<tr>
 		 	<td> 1952</td>
@@ -138,7 +139,7 @@
         </tr>
     </table> <br/>
     <figure>
-        <img src="Images/First_Web_Server.JPEG" alt="Image serveur"/> 
+        <img src="Images/First_Web_Server.JPEG" alt="Image serveur"  width="650" height="600"/> 
         <figcaption>Fig.1-Le premier serveur web, actuellement au musée du CERN, étiqueté « This machine is a
             server. DO NOT POWER IT DOWN!! »</figcaption> 
         
@@ -154,7 +155,7 @@
         Hubert Zimmermann et Louis Pouzin (développeurs du réseau Cyclades) un important travail de
         développement.
 	</p>
-    <p>Avec le rôle du réseau physique réduit à son strict minimum, il devint alors possible de
+    <p class="citation">Avec le rôle du réseau physique réduit à son strict minimum, il devint alors possible de
         fusionner à peu près tout type de réseau sans tenir compte de leurs caractéristiques et ainsi
         résoudre le problème que s'était posé Robert E. Kahn à ses débuts. La DARPA accepta de
         financer le développement du logiciel prototype, et après plusieurs années de travail, la
@@ -166,4 +167,4 @@
         précédent protocole NCP2
     </p>
 </body>
-</html>
+</html> 
