@@ -2,24 +2,26 @@ body {
     background-color:#c8c8c8;
     font-family: 'Roboto';
     padding: 12px 152px;
+    text-align: justify;
 }
 a{
     color:#cf0025;
     font-weight: bold;
 }
 h1{
-    font-family:'Libre Baskerville', serif;
+    font-family:'Baskerville';
     font-size: 65px;
     text-align: center;
 }
 h2{
     
-    font-family:'Libre Baskerville' ,serif;
+    font-family:'Baskerville';
     color:#cf0025;
     font-size: 30px;
 }
 table{
     border-collapse:collapse;
+    width: 100%;
 }
 th{
     color: white;
@@ -60,7 +62,72 @@ img{
     color: #4e41ae;
     border-style: dashed;
     background-color: #b7b7b7;
-    padding: 2%;
-    font-size: 21px;
-    line-height: 35px;
+    padding: 3%;
+    font-size: 30px;
+    line-height: 45px;
 }
+
+/* Sur les tablettes ou tout periphérique ayant une valeur minimale de 768 de largeur*/
+@media (min-width: 768px) { 
+    
+    body{
+        padding: 0px;
+        text-align: justify;
+    }
+    figcaption{
+        font-weight: normal;
+    }
+}
+
+/*Sur les smartphones*/
+@media (max-width: 576px) {
+    body{
+        padding: 3px;
+        font-size: 25px;
+        text-align: justify;
+    }
+    h1{
+        font-size: 75px;
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color: #c8c8c8;
+    }
+    table{
+        border: 1px solid black;
+    }
+    figure{
+        border: none;
+        border-radius: 0px;
+        background-color: #b7b7b7;
+        margin-top: -2%;
+        padding: 0%;
+        width: 100%;
+
+    }
+    figcaption{
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    .null{
+        display: none;
+    }
+
+    
+ } 
+ /*Pour les devices large*/
+ @media (min-width: 992px) { 
+    body{
+        padding: 30px;
+    }
+
+
+ }
+ /*Pour les devices extra large*/
+ @media (min-width: 1200px) {
+    body{
+        padding: 50px;
+    }
+ }
